@@ -1,7 +1,7 @@
 <h1>ShoppersStop</h1>
 <h2>Clone of ShoppersStop</h2>
 <h3>ShopperStop is an e-com website that deals in clothing, accessories, handbags, shoes, jewellery, fragrances, cosmetics, health and beauty products, home furnishing, and decor products. We a groupt of 5 members effectively complete the cloning of this site within 5 days using following tech stacks.</h3>
-<h2>Built with</h2>
+
 
 <h2>Built with</h2>
 <li>HTML</li>
