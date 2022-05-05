@@ -1,6 +1,7 @@
-<h1>Mamaearth</h1>
-<h2>Clone of Mamaearth</h2>
-<p>Mamaearth is an website that provides toxin-free skincare and hair care products, for babies and adults. we as a team of six members built the clone of mamaearth.com in 5 days.While building this project we have used HTML,CSS,javascript and local storage</p>
+<h1>ShoppersStop</h1>
+<h2>Clone of ShoppersStop</h2>
+<h3>ShopperStop is an e-com website that deals in clothing, accessories, handbags, shoes, jewellery, fragrances, cosmetics, health and beauty products, home furnishing, and decor products. We a groupt of 5 members effectively complete the cloning of this site within 5 days using following tech stacks.</h3>
+<h2>Built with</h2>
 
 <h2>Built with</h2>
 <li>HTML</li>
