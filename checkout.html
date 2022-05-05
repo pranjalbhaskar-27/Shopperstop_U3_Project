@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            
+            display: inline-block;
+        
+            
+           
+        }
+        #heading {
+            text-align: end;
+            
+
+        }
+        #heading>h1 {
+            font-size: 30px;
+            font-weight: 700;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #pagetype {
+            width: 700px;
+            height: 50px;
+            background-color: rgb(175, 174, 174);
+           padding: 2px;
+           padding-left: 50px;
+           margin-left: 100px;
+           
+        }
+        input {
+            margin-top: 20px;
+            margin-right: 20px;
+            border: none;
+        }
+        #save_div {
+            margin-left: 500px;
+            width: 200px;
+            height: 40px
+        }
+        button {
+            background: linear-gradient(to right, #ff9966 0%, #ff0066 100%);
+            color: white;
+            border: 1px solid white;
+            padding: 5px;
+        }
+        #form_div {
+           margin-left: 200px;
+        }
+        #add_div{
+            margin-left: 150px;
+        }
+        #order_summery {
+            border: 20px solid rgb(175, 174, 174) ;
+            width: 300px;
+            height: 340px;
+            display: inline-block;
+            margin-top: -100px;
+            text-align: center;
+            margin-left: 100px;
+          
+            
+            
+        }
+        img {
+            width: 100%;
+            height:600px
+        }
+        h2 {
+            font-size: 20px;
+        }
+        #order {
+            background-color: rgb(175, 174, 174);
+            padding: 5px;
+        }
+        #total_div {
+            margin-top: 100px;
+        }
+        /* #order_summery>h4 {
+            text-align: center;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div id="heading">
+        <h1 >SHOPPER STOP</h1>
+
+    </div>
+    <div id="pagename">
+        <h3>CHECK OUT</h3>
+    </div>
+    <div id="pagetype">
+        <h2>1.DELIVERY METHOD</h2>
+    </div>
+
+    <div id="add_div">
+        <h4>Delivery Address</h4>
+    </div>
+    <div id="form_div">
+    <form>
+       <div> <input type="text" placeholder="Name"/> </div>
+        <div> <input type="Number" placeholder="Mobile*"/></div>
+            <div><input type="number" placeholder="PinCode"/></div>
+                <div><input type="text" placeholder="City"/>
+                    <input type="text" placeholder="State"/></div>
+    </form>
+    
+    <div>
+       
+        <p> <input type="checkbox" />Save Adress for future reference</p>
+    </div>
+    <div id="save_div" >
+      <a href="payment.html" > <button type="submit" >SAVE AND PROCEED</button></a>
+    </div>
+     </div>
+    </div>
+    <div id="order_summery">
+       
+            <!-- <h4>ORDER SUMMERY</h4> -->
+            <div>
+                <h2 id="order">ORDER SUMMARY</h2>
+            </div>
+            <div id="total">
+
+            </div>
+            <div>
+                <h4>DELIVERY CHARGES:<span>       </span>FREE</h4>
+                <h4>GIFT PACKING: <span>       </span>FREE</h4>
+                <h4 id="dis_price"></h4>
+                <h4 id="strike_price">COUPON DISCOUNT</h4>
+            </div>
+            <div>
+                <h3 id="total_div"></h3>
+            </div>
+       
+    </div>
+    <div>
+        <img src="footer.png"/>
+    </div>
+</body>
+</html>
+<script>
+    var cart_price=JSON.parse(localStorage.getItem("Total_price"));
+    var cart_strikeprice=JSON.parse(localStorage.getItem("strike_price"));
+    console.log("cart_price:",cart_price)
+    document.getElementById('dis_price').innerText='TOTAL CART PRICE:        '+cart_price;
+    document.getElementById("strike_price").innerText='COUPON DISCOUNT:     '+cart_strikeprice;
+    document.getElementById('total_div').innerText='TOTAL  PAYABLE:        '+cart_price;
+</script>
